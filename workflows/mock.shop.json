@@ -1,0 +1,7 @@
+{
+  "store": "mock.shop",
+  "api_url": "https://mock.shop/api",
+  "store_url": "https://demostore.hydrogen.mock.shop",
+  "page_size": 50,
+  "probe_quantity": 999
+}

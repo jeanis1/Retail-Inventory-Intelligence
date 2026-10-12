@@ -1,0 +1,13 @@
+{
+  "name": "inventory_scraper",
+  "version": "1.0.0",
+  "description": "A configurable Python Playwright runner for product variant cart quantity checks. It does not check out, bypass restrictions, or call an LLM.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5"
+  }
+}
