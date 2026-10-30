@@ -44,6 +44,9 @@ The system currently produces inventory snapshots rather than performing native 
 ```
 Retail Websites → Product & Variant Discovery → Exact SKU-Level Inventory Verification → CSV Export → External Historical Delta Analysis → Competitive & Strategic Intelligence
 ```
+## Roadmap: Parallel Workers
+
+The inventory check currently runs sequentially, one variant at a time, so runtime grows linearly with catalog size. Splitting product handles across N worker processes, each with its own Chromium instance and cart, should cut runtime by close to N×, limited by available RAM and the target site's rate limits.
 
 > **Analytical limitation:** Inventory changes are directional signals, not direct measurements of consumer purchases. Replenishment, transfers, adjustments, and differences between retailer-reported inventory and physically available stock must be considered when interpreting market trends. Sell-through, promotional effectiveness, and forecasts require additional data and analytical validation.
 <br>
